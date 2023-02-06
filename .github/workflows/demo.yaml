@@ -26,10 +26,10 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
         name: Install AWS CLI
-        run: 
+        run: |
         sudo apt-get update
         sudo apt-get install awscli -y
 
-        name: Upload HTML file to S3
-        run: 
+      name: Upload HTML file to S3
+        run: |
         aws s3 cp ./${{ env.HTML_FILE }} s3://${{ env.S3_BUCKET }}/${{ env.HTML_FILE }}
