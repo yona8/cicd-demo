@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AWS_REGION: Global
+  AWS_REGION: ap-southeast-2
   S3_BUCKET: cicddemoleah
   HTML_FILE: demo.html
 
