@@ -1,0 +1,15 @@
+name: demo
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
